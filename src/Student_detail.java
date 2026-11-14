@@ -1,12 +1,12 @@
 
-class Studentss {
+class Student_detail {
     String name,usn;
     int m1, m2, m3;
 
     static int count = 0;
     final int MAX = 100;
 
-    Studentss(String n,String u, int a, int b, int c) {
+    Student_detail(String n,String u, int a, int b, int c) {
         name = n;
         usn=u;
         m1 = validate(a);
@@ -71,11 +71,11 @@ class StudentResultTest
 {
     public static void main(String[]args)
     {
-        Studentss s=new Studentss("101","Ron",40,50,60);
+        Student_detail s=new Student_detail("101","Ron",40,50,60);
         s.display(true);
         Result r=s.getResult();
         r.show();
-        System.out.println("Student Count="+Studentss.count);
+        System.out.println("Student Count="+Student_detail.count);
     }
 }
 
